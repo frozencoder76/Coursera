@@ -1,0 +1,104 @@
+/*************** Base Styles ************/
+* {
+	box-sizing:border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	margin-bottom: 25px;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 3.5em;
+}
+
+.section {
+	border: 1px solid black;
+	border-width: thick;
+	width: 90%;
+	height: 150px;
+	font-family: Helvetica;
+	color: yellow;
+	position: relative;
+	background-color: rgba(153,51,255,1);
+	margin-left: 15px;
+	margin-bottom: 15px;
+	overflow: auto;
+}
+
+#Beef, #Chicken, #Sushi {
+	border: 1px solid black;
+	text-align: center;
+	width: 85px;
+	height: 25px;
+	font-size: 1.10em;
+	position: absolute;
+	right: 0;
+}
+
+.insideText {
+	margin: 5px;
+	padding: 5px;
+	font-size: .85em;
+	position: absolute;
+	top: 25px;
+}
+
+#Beef {
+	background-color: rgba(51,102,0,1);
+}
+
+#Chicken {
+	background-color: rgba(0,51,255,1);
+}
+
+#Sushi {
+	background-color: rgba(204,0,51,1);
+}
+
+/* Responsive Degign */
+.row {
+	width: 100%;
+	border: hidden;
+}
+
+/*********** Large Devices ***********/
+@media (min-width: 992px) {
+	.col-lg-1, .col-lg-2, .col-lg-3 {
+		float: left;
+	}
+	
+	.col-lg-1 {
+		width: 33.33%
+	}
+	
+	.col-lg-2 {
+		width: 66.66%
+	}
+	
+	.col-lg-3 {
+		width: 100%
+	}
+}
+
+/********* Medium Devices ***********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-1, .col-md-2 {
+		float: left;
+	}
+	
+	.col-md-1 {
+		width: 50%
+	}
+	
+	.col-md-2 {
+		width: 100%
+	}
+}
+
+/******** Small Devices *********/
+@media (max-width: 767px) {
+	.col-sm-1 {
+		width: 100%
+	}
+}
